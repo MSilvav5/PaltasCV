@@ -16,10 +16,10 @@ heights=[patch.get_height() for patch in p]
 heights_cut=np.array(heights[100::])
 sum=np.cumsum(heights_cut)
 umbral=sum[len(sum)-1]
-if umbral < 8000:
-    print("que rica palta")
+if umbral < 10000:
+    print("Palta Madura")
 else:
-    print("tas verde")
+    print("Palta Inmadura")
 
 print(umbral)
 plt.show()
